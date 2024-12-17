@@ -1,5 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import cors from "cors";
+
+app.use(
+  cors({
+    origin: "http://52.202.249.155:5001",
+    credentials: true,
+  })
+);
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
